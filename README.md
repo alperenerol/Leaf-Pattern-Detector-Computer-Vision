@@ -1,0 +1,3 @@
+# LeafDetector
+First, programme smooths and thresholds the input image. Then using bwconncomp function it find connected components in image. With cellfun function programme counts pixels with applying function to each cell in cell array. After that objects counted  with using output .NumObjects. Then using while loop programme make turn the loop until finding all leaves on image. 
+With using ind2sub , x y values of image subscriptsindex from ConnComp array index. Max and min values found by for loops inside while loop. According to these min max values programme crops image where leaves stays. With insertmarker programmes shows on original image where detected leaves locates on image then outputs the number of detected leaves.
